@@ -13,10 +13,10 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="137dp" />
+            android:layout_height="40dp" />
 
         <EditText
-            android:id="@+id/editTextNumberSigned"
+            android:id="@+id/edN"
             android:layout_width="339dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -25,7 +25,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="80dp" />
+            android:layout_height="33dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +36,8 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="plus"
+                android:text="+" />
 
             <Space
                 android:layout_width="34dp"
@@ -47,7 +48,8 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="hisor"
+                android:text="-" />
 
             <Space
                 android:layout_width="34dp"
@@ -56,10 +58,11 @@
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="wrap_content"
+                android:layout_width="102dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="kefel"
+                android:text="*" />
 
             <Space
                 android:layout_width="38dp"
@@ -71,17 +74,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="hilok"
+                android:text="/" />
 
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="68dp" />
+            android:layout_height="44dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="254dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Space
@@ -94,7 +98,8 @@
                 android:layout_width="56dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="clear"
+                android:text="A/C" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -106,7 +111,8 @@
                 android:layout_width="68dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="shave"
+                android:text="=" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -114,6 +120,10 @@
                 android:layout_weight="1" />
 
         </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -128,10 +138,11 @@
 
             <Button
                 android:id="@+id/button11"
-                android:layout_width="123dp"
+                android:layout_width="166dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="credits"
+                android:text="credits" />
 
             <Space
                 android:layout_width="294dp"
