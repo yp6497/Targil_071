@@ -17,10 +17,10 @@
 
         <EditText
             android:id="@+id/edN"
-            android:layout_width="339dp"
+            android:layout_width="263dp"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_gravity="center"
+            android:ems="10"
             android:inputType="numberSigned" />
 
         <Space
@@ -40,7 +40,7 @@
                 android:text="+" />
 
             <Space
-                android:layout_width="34dp"
+                android:layout_width="27dp"
                 android:layout_height="50dp"
                 android:layout_weight="1" />
 
@@ -58,9 +58,8 @@
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="102dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:onClick="kefel"
                 android:text="*" />
 
@@ -73,7 +72,6 @@
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:onClick="hilok"
                 android:text="/" />
 
@@ -132,7 +130,7 @@
             android:orientation="horizontal">
 
             <Space
-                android:layout_width="39dp"
+                android:layout_width="98dp"
                 android:layout_height="45dp"
                 android:layout_weight="1" />
 
