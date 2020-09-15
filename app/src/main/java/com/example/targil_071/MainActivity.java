@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void credits(View view) {
+        st = String.valueOf(ans);
         Intent si=new Intent(this,credi.class);
-        si.putExtra("c",ans);
+        si.putExtra("c",st);
+        //si.putExtra("c",ans);
         startActivity(si);
     }
 

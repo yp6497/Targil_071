@@ -5,27 +5,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class credi extends AppCompatActivity {
 
-    //TextView t;
+    TextView t;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credi);
-        //Intent gi= getIntent();
-        //
-        //t=findViewById(R.id.t);
-        //t.setText(ans);
-        //t= (TextView) findViewById(R.id.t);
+        t= findViewById(R.id.t);
+        ans();
 
-        //Intent gi = getIntent();
-        //int x1=gi.getIntExtra("intVariableName", 0);
-        //String t = gi.getStringExtra(Intent.EXTRA_TEXT);
-        //String st=Integer.toString(x1);
-        TextView t = (TextView) findViewById(R.id.t);
-        //t.setText(st);
+    }
+
+    private void ans() {
+
+        t = findViewById(R.id.t);
+        Intent gi = getIntent();
+        String str = gi.getStringExtra("c");
+        t.setText("The answer to the last result is: "+str);
+
+        //a=gi.getIntExtra("c", -1);
+        //st = Intent.getStringExtra("m");
+        //st=ed.getText().toString();
+        //a = Integer.parseInt(st);
+        //if(a!='a')
+        //  t.setText(""+st);
+        //else
+        //  t.setText("");
+
+
+
     }
 
 
