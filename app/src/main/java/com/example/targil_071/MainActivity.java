@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void credits(View view) {
+        edN.getText().clear();
         st = String.valueOf(ans);
         Intent si=new Intent(this,credi.class);
         si.putExtra("c",st);
-        //si.putExtra("c",ans);
         startActivity(si);
     }
 
@@ -53,9 +53,6 @@ public class MainActivity extends AppCompatActivity {
                 ans = n1 / n2;
             edN.setText("" + ans);
         }
-        //edN.getText().clear();
-
-
     }
 
     public void hilok(View view) {
@@ -67,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
             edN.getText().clear();
             n1 = Float.parseFloat(st);
         }
-
     }
 
     public void kefel(View view) {
@@ -77,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"please enter a number",Toast.LENGTH_SHORT).show();
         else {
             edN.getText().clear();
-            n1 = Integer.parseInt(st);
+            n1 = Float.parseFloat(st);
         }
     }
 
@@ -88,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"please enter a number",Toast.LENGTH_SHORT).show();
         else {
             edN.getText().clear();
-            n1 = Integer.parseInt(st);
+            n1 = Float.parseFloat(st);
         }
     }
 
@@ -99,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
           Toast.makeText(this,"please enter a number",Toast.LENGTH_SHORT).show();
         else {
             edN.getText().clear();
-            n1 = Integer.parseInt(st);
+            n1 = Float.parseFloat(st);
         }
     }
 }
